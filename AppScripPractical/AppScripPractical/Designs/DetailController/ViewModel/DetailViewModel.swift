@@ -11,6 +11,5 @@ import CoreData
 
 final class DetailViewModel: BaseViewModel {
     
-    var selectedMovie: NSManagedObject?
-    
+    var selectedMovie: Movie?
 }

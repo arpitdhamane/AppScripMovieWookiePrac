@@ -21,9 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     @objc func saveData(notification:NSNotification) {
         // Save your data here
         print("Saving data...")
-        UserDefaults.standard.set(false, forKey: "isAppAlreadyOpen") //Bool
-        let coreDataUtill = CoreDataFunctions()
-        coreDataUtill.deleteAllData(entity: "Album")
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

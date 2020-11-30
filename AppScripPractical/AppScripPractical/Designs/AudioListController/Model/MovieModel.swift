@@ -15,56 +15,23 @@ struct Welcome {
 
 // MARK: - Movie
 struct Movie {
-    let backdrop: String
-    let cast: [String]
-    let classification: Classification
-    let director: Director
-    let genres: [String]
-    let id: String
-    let imdbRating: Double
-    let length, overview: String
-    let poster: String
-    let releasedOn, slug, title: String
+    var backdrop: String = ""
+    var classification: String = ""
+    var genres: [String] = []
+    var id: String = ""
+    var imdbRating: Double = 0.0
+    var length: String = ""
+    var overview: String = ""
+    var poster: String = ""
+    var releasedOn: String = ""
+    var slug: String = ""
+    var title: String = ""
 
     enum CodingKeys: String, CodingKey {
-        case backdrop, cast, classification, director, genres, id
+        case backdrop, classification, director, genres, id
         case imdbRating = "imdb_rating"
         case length, overview, poster
         case releasedOn = "released_on"
         case slug, title
-    }
-}
-
-enum Classification: String {
-    case the13 = "13+"
-    case the18 = "18+"
-    case the7 = "7+"
-}
-
-enum Director {
-    case string(String)
-    case stringArray([String])
-
-    init(from decoder: Decoder) throws {
-        let container = try decoder.singleValueContainer()
-        if let x = try? container.decode([String].self) {
-            self = .stringArray(x)
-            return
-        }
-        if let x = try? container.decode(String.self) {
-            self = .string(x)
-            return
-        }
-        throw DecodingError.typeMismatch(Director.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for Director"))
-    }
-
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.singleValueContainer()
-        switch self {
-        case .string(let x):
-            try container.encode(x)
-        case .stringArray(let x):
-            try container.encode(x)
-        }
     }
 }

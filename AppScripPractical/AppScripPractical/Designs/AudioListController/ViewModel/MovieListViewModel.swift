@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 class MovieListViewModel: BaseViewModel {
-    var movieModel: [Movie] = []
+    var movieList: [Movie] = []
     var elementName: String = String()
     
     var aTitle = String()
@@ -23,20 +23,9 @@ class MovieListViewModel: BaseViewModel {
     var coreDataUtill = CoreDataFunctions()
     
     func fetchMovieList() {
-        Movies = coreDataUtill.fetchMovieList()
+//        Movies = coreDataUtill.fetchMovieList()
     }
     
-//    func saveMovieToDataBase(completion: @escaping (Bool) -> ()) {
-//        for index in 0..<self.MovieModel.count {
-//            let item  = self.MovieModel[index]
-//            DispatchQueue.main.async {
-//                self.coreDataUtill.save(title: item.title, name: item.name, link: item.link, artist: item.artist, category: item.category, image: item.image)
-//            }
-//            if index == 19 {
-//                completion(true)
-//            }
-//        }
-//    }
     func callMovieListAPI(completion: @escaping (Bool) -> ()) {
         
         var request = URLRequest(url: URL(string: "https://wookie.codesubmit.io/movies")!,timeoutInterval: Double.infinity)
@@ -52,37 +41,16 @@ class MovieListViewModel: BaseViewModel {
             }
             
             // Parse JSON data
-            if let data = data {
-                self.loans = self.parseJsonData(data: data)
-
-                // Reload table view
-                OperationQueue.main.addOperation({
-                    self.tableView.reloadData()
-                })
-            }
-
-//            do {
-//                if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
-//                    if let allContent = json["movies"] as? [[String: Any]] {
-//                        for item in allContent {
-//                            if let movie = Movies(json: item) {
-//                                self.movieModel.append(movie)
-//                            }
-////                            print("--------------------------------")
-//                        }
-//                    }
-//                }
-//            } catch {
-//                print("Error: Couldn't parse JSON. \(error.localizedDescription)")
-//            }
-//
-            print(self.movieModel.count)
+            self.movieList = self.parseJsonData(data: data)
+            
+            print(self.movieList.count)
+            completion(true)
         }
         
         task.resume()
     }
     
-    func parseJsonData(data: Data) -> [Loan] {
+    func parseJsonData(data: Data) -> [Movie] {
 
         var movies = [Movie]()
 
@@ -90,21 +58,25 @@ class MovieListViewModel: BaseViewModel {
             let jsonResult = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary
 
             // Parse JSON data
-            let jsonLoans = jsonResult?["loans"] as! [AnyObject]
-            for jsonLoan in jsonLoans {
-                let loan = Movie()
-                loan.name = jsonLoan["name"] as! String
-                loan.amount = jsonLoan["loan_amount"] as! Int
-                loan.use = jsonLoan["use"] as! String
-                let location = jsonLoan["location"] as! [String:AnyObject]
-                loan.country = location["country"] as! String
-                loans.append(loan)
+            let jsonMovies = jsonResult?["movies"] as! [AnyObject]
+            for jsonMovie in jsonMovies {
+                var movie = Movie()
+                movie.backdrop = jsonMovie["backdrop"] as! String
+                movie.genres = jsonMovie["genres"] as![String]
+                movie.classification = jsonMovie["classification"] as! String
+                movie.id = jsonMovie["id"] as! String
+                movie.length = jsonMovie["length"] as! String
+                movie.overview = jsonMovie["overview"] as! String
+                movie.poster = jsonMovie["poster"] as! String
+                movie.slug = jsonMovie["slug"] as! String
+                movie.title = jsonMovie["title"] as! String
+                movies.append(movie)
             }
         } catch {
             print(error)
         }
 
-        return loans
+        return movies
     }
 }
 

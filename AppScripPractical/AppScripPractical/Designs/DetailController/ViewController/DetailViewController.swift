@@ -15,13 +15,15 @@ final class DetailViewController: BaseViewController {
     @IBOutlet weak var imageMoviePoster: UIImageView!
     
     @IBOutlet weak var lblMovieName: UILabel!
-    @IBOutlet weak var lblDirectorName: UILabel!
+    @IBOutlet weak var lblGenre: UILabel!
+    @IBOutlet weak var lblRating: UILabel!
     @IBOutlet weak var lblMoviePlot: UILabel!
+    
+    @IBOutlet weak var viewGradient: UIView!
 
     @IBOutlet weak var btnFavourite: UIButton!
     
     var viewModel = DetailViewModel()
-    var player: AVPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,11 +36,34 @@ final class DetailViewController: BaseViewController {
     }
     
     private func setupUI() {
-        let strImageURL = self.viewModel.selectedMovie!.value(forKeyPath: "image") as? String ?? ""
-//        self.imageMovie.downloaded(from: strImageURL)
-        let strMovieURL = self.viewModel.selectedMovie!.value(forKeyPath: "link") as? String ?? ""
+        
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: viewGradient.frame.size.width, height: viewGradient.frame.size.height))
+        let gradient = CAGradientLayer()
 
-//        self.btnPlayPauseOutlet.setTitle("Pause", for: .normal)
+        gradient.frame = view.bounds
+        gradient.colors = [UIColor.white.cgColor, UIColor.black.cgColor]
+
+//        viewGradient.layer.insertSublayer(gradient, at: 0)
+
+        let movie = self.viewModel.selectedMovie
+        lblMovieName.text = movie!.title
+        lblRating.text = movie!.classification
+        var genre = ""
+        for item in movie!.genres {
+            if genre == "" {
+                genre = item
+            } else {
+                genre = genre + ", " + item
+            }
+        }
+        lblGenre.text = genre
+        lblMoviePlot.text = movie!.overview
+
+        let strURLPoster = movie!.poster
+        imageMoviePoster.downloaded(from: strURLPoster)
+        let strURLbackdrop = movie!.backdrop
+        imageMovieBackground.downloaded(from: strURLbackdrop)
+
     }
 
 }
