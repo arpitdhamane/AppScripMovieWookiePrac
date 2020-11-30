@@ -1,6 +1,6 @@
 //
 //  MovieListCell.swift
-//  practicalencore
+//  AppScripPractical
 //
 //  Created by Mac Mini on 12/11/20.
 //

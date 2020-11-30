@@ -2,7 +2,7 @@
 //  AppScripPracticalTests.swift
 //  AppScripPracticalTests
 //
-//  Created by Arpit Dhamane on 30/11/20.
+//  Created by Mac Mini on 30/11/20.
 //
 
 import XCTest
