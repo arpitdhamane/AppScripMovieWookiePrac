@@ -9,10 +9,10 @@
 import UIKit
 
 final class MovieListViewController: BaseViewController {
-    
+    var viewModel = MovieListViewModel()
+
     @IBOutlet weak var lblLoading: UILabel!
     @IBOutlet weak var tblMovieList: UITableView!
-    var viewModel = MovieListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +40,7 @@ final class MovieListViewController: BaseViewController {
     
     private func callInitialAPI() {
         self.tblMovieList.isHidden = true
-        self.lblLoading.text = "Loading songs..."
+        self.lblLoading.text = "Loading movies..."
         viewModel.callMovieListAPI(completion: { (status) in
             DispatchQueue.main.async {
                 if status {
@@ -75,11 +75,11 @@ extension MovieListViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieListCell", for: indexPath) as! MovieListCell
         
-        cell.lblMovieTitle.text = "aaaa"
-        let Movie = self.viewModel.Movies[indexPath.row]
-        cell.lblMovieTitle.text = Movie.value(forKeyPath: "title") as? String
-        let strURL = Movie.value(forKeyPath: "image") as? String ?? ""
-        cell.imageMovie.downloaded(from: strURL)
+        cell.lblMovieName.text = "aaaa"
+//        let Movie = self.viewModel.Movies[indexPath.row]
+//        cell.lblMovieTitle.text = Movie.value(forKeyPath: "title") as? String
+//        let strURL = Movie.value(forKeyPath: "image") as? String ?? ""
+//        cell.imageMovie.downloaded(from: strURL)
         
         return cell
     }

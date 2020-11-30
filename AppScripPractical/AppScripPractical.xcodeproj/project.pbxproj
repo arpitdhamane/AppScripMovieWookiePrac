@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D6BA76262575637400A105F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76252575637400A105F6 /* AppDelegate.swift */; };
-		D6BA762A2575637400A105F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76292575637400A105F6 /* ViewController.swift */; };
 		D6BA762D2575637400A105F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BA762B2575637400A105F6 /* Main.storyboard */; };
 		D6BA762F2575637500A105F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6BA762E2575637500A105F6 /* Assets.xcassets */; };
 		D6BA76322575637500A105F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BA76302575637500A105F6 /* LaunchScreen.storyboard */; };
@@ -26,18 +25,18 @@
 		D6BA767F2575642200A105F6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76662575642200A105F6 /* BaseViewController.swift */; };
 		D6BA76802575642200A105F6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76662575642200A105F6 /* BaseViewController.swift */; };
 		D6BA76812575642200A105F6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76662575642200A105F6 /* BaseViewController.swift */; };
-		D6BA76822575642200A105F6 /* AudioListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76692575642200A105F6 /* AudioListViewModel.swift */; };
-		D6BA76832575642200A105F6 /* AudioListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76692575642200A105F6 /* AudioListViewModel.swift */; };
-		D6BA76842575642200A105F6 /* AudioListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76692575642200A105F6 /* AudioListViewModel.swift */; };
-		D6BA76852575642200A105F6 /* AlbumListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766B2575642200A105F6 /* AlbumListCell.swift */; };
-		D6BA76862575642200A105F6 /* AlbumListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766B2575642200A105F6 /* AlbumListCell.swift */; };
-		D6BA76872575642200A105F6 /* AlbumListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766B2575642200A105F6 /* AlbumListCell.swift */; };
-		D6BA76882575642200A105F6 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766D2575642200A105F6 /* AlbumModel.swift */; };
-		D6BA76892575642200A105F6 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766D2575642200A105F6 /* AlbumModel.swift */; };
-		D6BA768A2575642200A105F6 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766D2575642200A105F6 /* AlbumModel.swift */; };
-		D6BA768B2575642200A105F6 /* AudioListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766F2575642200A105F6 /* AudioListViewController.swift */; };
-		D6BA768C2575642200A105F6 /* AudioListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766F2575642200A105F6 /* AudioListViewController.swift */; };
-		D6BA768D2575642200A105F6 /* AudioListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766F2575642200A105F6 /* AudioListViewController.swift */; };
+		D6BA76822575642200A105F6 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76692575642200A105F6 /* MovieListViewModel.swift */; };
+		D6BA76832575642200A105F6 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76692575642200A105F6 /* MovieListViewModel.swift */; };
+		D6BA76842575642200A105F6 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76692575642200A105F6 /* MovieListViewModel.swift */; };
+		D6BA76852575642200A105F6 /* MovieListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766B2575642200A105F6 /* MovieListCell.swift */; };
+		D6BA76862575642200A105F6 /* MovieListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766B2575642200A105F6 /* MovieListCell.swift */; };
+		D6BA76872575642200A105F6 /* MovieListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766B2575642200A105F6 /* MovieListCell.swift */; };
+		D6BA76882575642200A105F6 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766D2575642200A105F6 /* MovieModel.swift */; };
+		D6BA76892575642200A105F6 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766D2575642200A105F6 /* MovieModel.swift */; };
+		D6BA768A2575642200A105F6 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766D2575642200A105F6 /* MovieModel.swift */; };
+		D6BA768B2575642200A105F6 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766F2575642200A105F6 /* MovieListViewController.swift */; };
+		D6BA768C2575642200A105F6 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766F2575642200A105F6 /* MovieListViewController.swift */; };
+		D6BA768D2575642200A105F6 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766F2575642200A105F6 /* MovieListViewController.swift */; };
 		D6BA768E2575642200A105F6 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76722575642200A105F6 /* DetailViewModel.swift */; };
 		D6BA768F2575642200A105F6 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76722575642200A105F6 /* DetailViewModel.swift */; };
 		D6BA76902575642200A105F6 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76722575642200A105F6 /* DetailViewModel.swift */; };
@@ -66,7 +65,6 @@
 /* Begin PBXFileReference section */
 		D6BA76222575637400A105F6 /* AppScripPractical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppScripPractical.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6BA76252575637400A105F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6BA76292575637400A105F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D6BA762C2575637400A105F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6BA762E2575637500A105F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6BA76312575637500A105F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,10 +79,10 @@
 		D6BA76632575642200A105F6 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		D6BA76652575642200A105F6 /* ServerErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerErrorViewController.swift; sourceTree = "<group>"; };
 		D6BA76662575642200A105F6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		D6BA76692575642200A105F6 /* AudioListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioListViewModel.swift; sourceTree = "<group>"; };
-		D6BA766B2575642200A105F6 /* AlbumListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListCell.swift; sourceTree = "<group>"; };
-		D6BA766D2575642200A105F6 /* AlbumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
-		D6BA766F2575642200A105F6 /* AudioListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioListViewController.swift; sourceTree = "<group>"; };
+		D6BA76692575642200A105F6 /* MovieListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		D6BA766B2575642200A105F6 /* MovieListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListCell.swift; sourceTree = "<group>"; };
+		D6BA766D2575642200A105F6 /* MovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		D6BA766F2575642200A105F6 /* MovieListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		D6BA76722575642200A105F6 /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		D6BA76752575642200A105F6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				D6BA76252575637400A105F6 /* AppDelegate.swift */,
-				D6BA76292575637400A105F6 /* ViewController.swift */,
 				D6BA76602575642200A105F6 /* Designs */,
 				D6BA765E2575642200A105F6 /* Utility */,
 				D6BA762B2575637400A105F6 /* Main.storyboard */,
@@ -225,7 +222,7 @@
 		D6BA76682575642200A105F6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				D6BA76692575642200A105F6 /* AudioListViewModel.swift */,
+				D6BA76692575642200A105F6 /* MovieListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -233,7 +230,7 @@
 		D6BA766A2575642200A105F6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				D6BA766B2575642200A105F6 /* AlbumListCell.swift */,
+				D6BA766B2575642200A105F6 /* MovieListCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -241,7 +238,7 @@
 		D6BA766C2575642200A105F6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D6BA766D2575642200A105F6 /* AlbumModel.swift */,
+				D6BA766D2575642200A105F6 /* MovieModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -249,7 +246,7 @@
 		D6BA766E2575642200A105F6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				D6BA766F2575642200A105F6 /* AudioListViewController.swift */,
+				D6BA766F2575642200A105F6 /* MovieListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -419,16 +416,15 @@
 			files = (
 				D6BA76762575642200A105F6 /* CoreDataFunctions.swift in Sources */,
 				D6BA767C2575642200A105F6 /* ServerErrorViewController.swift in Sources */,
-				D6BA76822575642200A105F6 /* AudioListViewModel.swift in Sources */,
+				D6BA76822575642200A105F6 /* MovieListViewModel.swift in Sources */,
 				D6BA76912575642200A105F6 /* DetailViewController.swift in Sources */,
-				D6BA76852575642200A105F6 /* AlbumListCell.swift in Sources */,
-				D6BA76882575642200A105F6 /* AlbumModel.swift in Sources */,
+				D6BA76852575642200A105F6 /* MovieListCell.swift in Sources */,
+				D6BA76882575642200A105F6 /* MovieModel.swift in Sources */,
 				D6BA76792575642200A105F6 /* BaseViewModel.swift in Sources */,
-				D6BA762A2575637400A105F6 /* ViewController.swift in Sources */,
 				D6BA76262575637400A105F6 /* AppDelegate.swift in Sources */,
 				D6BA767F2575642200A105F6 /* BaseViewController.swift in Sources */,
 				D6BA768E2575642200A105F6 /* DetailViewModel.swift in Sources */,
-				D6BA768B2575642200A105F6 /* AudioListViewController.swift in Sources */,
+				D6BA768B2575642200A105F6 /* MovieListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,12 +437,12 @@
 				D6BA76772575642200A105F6 /* CoreDataFunctions.swift in Sources */,
 				D6BA763D2575637500A105F6 /* AppScripPracticalTests.swift in Sources */,
 				D6BA768F2575642200A105F6 /* DetailViewModel.swift in Sources */,
-				D6BA768C2575642200A105F6 /* AudioListViewController.swift in Sources */,
-				D6BA76862575642200A105F6 /* AlbumListCell.swift in Sources */,
+				D6BA768C2575642200A105F6 /* MovieListViewController.swift in Sources */,
+				D6BA76862575642200A105F6 /* MovieListCell.swift in Sources */,
 				D6BA767D2575642200A105F6 /* ServerErrorViewController.swift in Sources */,
-				D6BA76892575642200A105F6 /* AlbumModel.swift in Sources */,
+				D6BA76892575642200A105F6 /* MovieModel.swift in Sources */,
 				D6BA767A2575642200A105F6 /* BaseViewModel.swift in Sources */,
-				D6BA76832575642200A105F6 /* AudioListViewModel.swift in Sources */,
+				D6BA76832575642200A105F6 /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,12 +455,12 @@
 				D6BA76782575642200A105F6 /* CoreDataFunctions.swift in Sources */,
 				D6BA76482575637500A105F6 /* AppScripPracticalUITests.swift in Sources */,
 				D6BA76902575642200A105F6 /* DetailViewModel.swift in Sources */,
-				D6BA768D2575642200A105F6 /* AudioListViewController.swift in Sources */,
-				D6BA76872575642200A105F6 /* AlbumListCell.swift in Sources */,
+				D6BA768D2575642200A105F6 /* MovieListViewController.swift in Sources */,
+				D6BA76872575642200A105F6 /* MovieListCell.swift in Sources */,
 				D6BA767E2575642200A105F6 /* ServerErrorViewController.swift in Sources */,
-				D6BA768A2575642200A105F6 /* AlbumModel.swift in Sources */,
+				D6BA768A2575642200A105F6 /* MovieModel.swift in Sources */,
 				D6BA767B2575642200A105F6 /* BaseViewModel.swift in Sources */,
-				D6BA76842575642200A105F6 /* AudioListViewModel.swift in Sources */,
+				D6BA76842575642200A105F6 /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

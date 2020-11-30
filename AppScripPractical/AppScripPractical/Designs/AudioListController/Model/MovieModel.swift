@@ -9,12 +9,12 @@ import UIKit
 import Foundation
 
 // MARK: - Welcome
-struct Welcome: Codable {
+struct Welcome {
     let movies: [Movie]
 }
 
 // MARK: - Movie
-struct Movie: Codable {
+struct Movie {
     let backdrop: String
     let cast: [String]
     let classification: Classification
@@ -35,13 +35,13 @@ struct Movie: Codable {
     }
 }
 
-enum Classification: String, Codable {
+enum Classification: String {
     case the13 = "13+"
     case the18 = "18+"
     case the7 = "7+"
 }
 
-enum Director: Codable {
+enum Director {
     case string(String)
     case stringArray([String])
 
