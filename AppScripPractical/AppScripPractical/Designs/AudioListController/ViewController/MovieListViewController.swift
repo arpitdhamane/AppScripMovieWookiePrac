@@ -2,7 +2,7 @@
 //  DemoViewController.swift
 //  AppScripPractical
 //
-//  Created by Mac Mini on 12/11/20.
+//  Created by Mac Mini on 30/11/20.
 //  
 //
 
@@ -61,7 +61,6 @@ extension MovieListViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return self.viewModel.Movies.count
         return self.viewModel.movieList.count
     }
     

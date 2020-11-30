@@ -2,7 +2,7 @@
 //  ServerErrorViewController.swift
 //  AppScripPractical
 //
-//  Created by Mac Mini on 12/11/20.
+//  Created by Mac Mini on 30/11/20.
 //  
 //
 

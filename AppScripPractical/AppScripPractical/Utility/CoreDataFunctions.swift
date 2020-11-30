@@ -2,7 +2,7 @@
 //  CoreDataFunctions.swift
 //  AppScripPractical
 //
-//  Created by Mac Mini on 12/11/20.
+//  Created by Mac Mini on 30/11/20.
 //
 
 import UIKit
@@ -51,14 +51,7 @@ class CoreDataFunctions: NSObject {
         
         let Movie = NSManagedObject(entity: entity,
                                     insertInto: managedContext)
-        
-        Movie.setValue(name, forKeyPath: "name")
-        Movie.setValue(link, forKeyPath: "link")
-        Movie.setValue(category, forKeyPath: "category")
-        Movie.setValue(artist, forKeyPath: "artist")
-        Movie.setValue(title, forKeyPath: "title")
-        Movie.setValue(image, forKeyPath: "image")
-        
+                
         do {
             try managedContext.save()
             Movies.append(Movie)

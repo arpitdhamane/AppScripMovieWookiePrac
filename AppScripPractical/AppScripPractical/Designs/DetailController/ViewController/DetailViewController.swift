@@ -2,7 +2,7 @@
 //  DemoViewController.swift
 //  AppScripPractical
 //
-//  Created by Mac Mini on 12/11/20.
+//  Created by Mac Mini on 30/11/20.
 //
 //
 
@@ -37,14 +37,6 @@ final class DetailViewController: BaseViewController {
     
     private func setupUI() {
         
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: viewGradient.frame.size.width, height: viewGradient.frame.size.height))
-        let gradient = CAGradientLayer()
-
-        gradient.frame = view.bounds
-        gradient.colors = [UIColor.white.cgColor, UIColor.black.cgColor]
-
-//        viewGradient.layer.insertSublayer(gradient, at: 0)
-
         let movie = self.viewModel.selectedMovie
         lblMovieName.text = movie!.title
         lblRating.text = movie!.classification

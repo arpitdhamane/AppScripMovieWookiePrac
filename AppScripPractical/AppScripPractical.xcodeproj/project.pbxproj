@@ -255,7 +255,6 @@
 			isa = PBXGroup;
 			children = (
 				D6BA76712575642200A105F6 /* ViewModel */,
-				D6BA76732575642200A105F6 /* Model */,
 				D6BA76742575642200A105F6 /* ViewController */,
 			);
 			path = DetailController;
@@ -267,13 +266,6 @@
 				D6BA76722575642200A105F6 /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		D6BA76732575642200A105F6 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		D6BA76742575642200A105F6 /* ViewController */ = {

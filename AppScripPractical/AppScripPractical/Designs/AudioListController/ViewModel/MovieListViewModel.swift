@@ -2,7 +2,7 @@
 //  DemoViewModel.swift
 //  AppScripPractical
 //
-//  Created by Mac Mini on 12/11/20.
+//  Created by Mac Mini on 30/11/20.
 //  
 //
 
@@ -43,7 +43,6 @@ class MovieListViewModel: BaseViewModel {
             // Parse JSON data
             self.movieList = self.parseJsonData(data: data)
             
-            print(self.movieList.count)
             completion(true)
         }
         
@@ -75,69 +74,6 @@ class MovieListViewModel: BaseViewModel {
         } catch {
             print(error)
         }
-
         return movies
     }
-}
-
-extension MovieListViewModel: XMLParserDelegate {
-    
-    // Did Start Element Method
-    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
-
-        if elementName == "entry" {
-            aTitle = String()
-            aName = String()
-            aArtist = String()
-            aLink = String()
-            aCategory = String()
-            aImage = String()
-        }
-        if elementName == "link" {
-            if let href = attributeDict["href"] {
-                if href.contains("plus.aac.p.m4a") {
-                    aLink = href
-                }
-            }
-        }
-        if elementName == "category" {
-            if let term = attributeDict["term"] {
-                aCategory = term
-            }
-        }
-
-        self.elementName = elementName
-    }
-
-    // Found characters Method
-    func parser(_ parser: XMLParser, foundCharacters string: String) {
-        let data = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-
-        if (!data.isEmpty) {
-            if self.elementName == "title" {
-                aTitle += data
-            } else if self.elementName == "im:name" {
-                aName += data
-            } else if self.elementName == "im:artist" {
-                aArtist += data
-            } else if self.elementName == "link" {
-//                aLink += data
-            } else if self.elementName == "category" {
-//                aCategory += data
-            } else if self.elementName == "im:image" {
-                if string.contains("170x170bb") {
-                    aImage += data
-                }
-            }
-        }
-    }
-
-    // Did End Element Method
-    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
-        if elementName == "entry" {
-//            let Movie = Welcome(title: aTitle, name: aName, link: aLink, artist: aArtist, category: aCategory, image: aImage)
-//            MovieModel.append(Movie)
-        }
-    }
-
 }
