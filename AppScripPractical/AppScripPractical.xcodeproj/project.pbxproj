@@ -14,6 +14,36 @@
 		D6BA76322575637500A105F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BA76302575637500A105F6 /* LaunchScreen.storyboard */; };
 		D6BA763D2575637500A105F6 /* AppScripPracticalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA763C2575637500A105F6 /* AppScripPracticalTests.swift */; };
 		D6BA76482575637500A105F6 /* AppScripPracticalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76472575637500A105F6 /* AppScripPracticalUITests.swift */; };
+		D6BA76762575642200A105F6 /* CoreDataFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA765F2575642200A105F6 /* CoreDataFunctions.swift */; };
+		D6BA76772575642200A105F6 /* CoreDataFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA765F2575642200A105F6 /* CoreDataFunctions.swift */; };
+		D6BA76782575642200A105F6 /* CoreDataFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA765F2575642200A105F6 /* CoreDataFunctions.swift */; };
+		D6BA76792575642200A105F6 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76632575642200A105F6 /* BaseViewModel.swift */; };
+		D6BA767A2575642200A105F6 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76632575642200A105F6 /* BaseViewModel.swift */; };
+		D6BA767B2575642200A105F6 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76632575642200A105F6 /* BaseViewModel.swift */; };
+		D6BA767C2575642200A105F6 /* ServerErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76652575642200A105F6 /* ServerErrorViewController.swift */; };
+		D6BA767D2575642200A105F6 /* ServerErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76652575642200A105F6 /* ServerErrorViewController.swift */; };
+		D6BA767E2575642200A105F6 /* ServerErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76652575642200A105F6 /* ServerErrorViewController.swift */; };
+		D6BA767F2575642200A105F6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76662575642200A105F6 /* BaseViewController.swift */; };
+		D6BA76802575642200A105F6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76662575642200A105F6 /* BaseViewController.swift */; };
+		D6BA76812575642200A105F6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76662575642200A105F6 /* BaseViewController.swift */; };
+		D6BA76822575642200A105F6 /* AudioListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76692575642200A105F6 /* AudioListViewModel.swift */; };
+		D6BA76832575642200A105F6 /* AudioListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76692575642200A105F6 /* AudioListViewModel.swift */; };
+		D6BA76842575642200A105F6 /* AudioListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76692575642200A105F6 /* AudioListViewModel.swift */; };
+		D6BA76852575642200A105F6 /* AlbumListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766B2575642200A105F6 /* AlbumListCell.swift */; };
+		D6BA76862575642200A105F6 /* AlbumListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766B2575642200A105F6 /* AlbumListCell.swift */; };
+		D6BA76872575642200A105F6 /* AlbumListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766B2575642200A105F6 /* AlbumListCell.swift */; };
+		D6BA76882575642200A105F6 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766D2575642200A105F6 /* AlbumModel.swift */; };
+		D6BA76892575642200A105F6 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766D2575642200A105F6 /* AlbumModel.swift */; };
+		D6BA768A2575642200A105F6 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766D2575642200A105F6 /* AlbumModel.swift */; };
+		D6BA768B2575642200A105F6 /* AudioListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766F2575642200A105F6 /* AudioListViewController.swift */; };
+		D6BA768C2575642200A105F6 /* AudioListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766F2575642200A105F6 /* AudioListViewController.swift */; };
+		D6BA768D2575642200A105F6 /* AudioListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA766F2575642200A105F6 /* AudioListViewController.swift */; };
+		D6BA768E2575642200A105F6 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76722575642200A105F6 /* DetailViewModel.swift */; };
+		D6BA768F2575642200A105F6 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76722575642200A105F6 /* DetailViewModel.swift */; };
+		D6BA76902575642200A105F6 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76722575642200A105F6 /* DetailViewModel.swift */; };
+		D6BA76912575642200A105F6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76752575642200A105F6 /* DetailViewController.swift */; };
+		D6BA76922575642200A105F6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76752575642200A105F6 /* DetailViewController.swift */; };
+		D6BA76932575642200A105F6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BA76752575642200A105F6 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +77,16 @@
 		D6BA76432575637500A105F6 /* AppScripPracticalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppScripPracticalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6BA76472575637500A105F6 /* AppScripPracticalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScripPracticalUITests.swift; sourceTree = "<group>"; };
 		D6BA76492575637500A105F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6BA765F2575642200A105F6 /* CoreDataFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataFunctions.swift; sourceTree = "<group>"; };
+		D6BA76632575642200A105F6 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		D6BA76652575642200A105F6 /* ServerErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerErrorViewController.swift; sourceTree = "<group>"; };
+		D6BA76662575642200A105F6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D6BA76692575642200A105F6 /* AudioListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioListViewModel.swift; sourceTree = "<group>"; };
+		D6BA766B2575642200A105F6 /* AlbumListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListCell.swift; sourceTree = "<group>"; };
+		D6BA766D2575642200A105F6 /* AlbumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		D6BA766F2575642200A105F6 /* AudioListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioListViewController.swift; sourceTree = "<group>"; };
+		D6BA76722575642200A105F6 /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		D6BA76752575642200A105F6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +139,8 @@
 			children = (
 				D6BA76252575637400A105F6 /* AppDelegate.swift */,
 				D6BA76292575637400A105F6 /* ViewController.swift */,
+				D6BA76602575642200A105F6 /* Designs */,
+				D6BA765E2575642200A105F6 /* Utility */,
 				D6BA762B2575637400A105F6 /* Main.storyboard */,
 				D6BA762E2575637500A105F6 /* Assets.xcassets */,
 				D6BA76302575637500A105F6 /* LaunchScreen.storyboard */,
@@ -123,6 +165,126 @@
 				D6BA76492575637500A105F6 /* Info.plist */,
 			);
 			path = AppScripPracticalUITests;
+			sourceTree = "<group>";
+		};
+		D6BA765E2575642200A105F6 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA765F2575642200A105F6 /* CoreDataFunctions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D6BA76602575642200A105F6 /* Designs */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA76612575642200A105F6 /* Base View */,
+				D6BA76672575642200A105F6 /* AudioListController */,
+				D6BA76702575642200A105F6 /* DetailController */,
+			);
+			path = Designs;
+			sourceTree = "<group>";
+		};
+		D6BA76612575642200A105F6 /* Base View */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA76622575642200A105F6 /* ViewModel */,
+				D6BA76642575642200A105F6 /* ViewController */,
+			);
+			path = "Base View";
+			sourceTree = "<group>";
+		};
+		D6BA76622575642200A105F6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA76632575642200A105F6 /* BaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6BA76642575642200A105F6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA76652575642200A105F6 /* ServerErrorViewController.swift */,
+				D6BA76662575642200A105F6 /* BaseViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D6BA76672575642200A105F6 /* AudioListController */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA76682575642200A105F6 /* ViewModel */,
+				D6BA766A2575642200A105F6 /* Cells */,
+				D6BA766C2575642200A105F6 /* Model */,
+				D6BA766E2575642200A105F6 /* ViewController */,
+			);
+			path = AudioListController;
+			sourceTree = "<group>";
+		};
+		D6BA76682575642200A105F6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA76692575642200A105F6 /* AudioListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6BA766A2575642200A105F6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA766B2575642200A105F6 /* AlbumListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D6BA766C2575642200A105F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA766D2575642200A105F6 /* AlbumModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6BA766E2575642200A105F6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA766F2575642200A105F6 /* AudioListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D6BA76702575642200A105F6 /* DetailController */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA76712575642200A105F6 /* ViewModel */,
+				D6BA76732575642200A105F6 /* Model */,
+				D6BA76742575642200A105F6 /* ViewController */,
+			);
+			path = DetailController;
+			sourceTree = "<group>";
+		};
+		D6BA76712575642200A105F6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA76722575642200A105F6 /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6BA76732575642200A105F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6BA76742575642200A105F6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA76752575642200A105F6 /* DetailViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,8 +417,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6BA76762575642200A105F6 /* CoreDataFunctions.swift in Sources */,
+				D6BA767C2575642200A105F6 /* ServerErrorViewController.swift in Sources */,
+				D6BA76822575642200A105F6 /* AudioListViewModel.swift in Sources */,
+				D6BA76912575642200A105F6 /* DetailViewController.swift in Sources */,
+				D6BA76852575642200A105F6 /* AlbumListCell.swift in Sources */,
+				D6BA76882575642200A105F6 /* AlbumModel.swift in Sources */,
+				D6BA76792575642200A105F6 /* BaseViewModel.swift in Sources */,
 				D6BA762A2575637400A105F6 /* ViewController.swift in Sources */,
 				D6BA76262575637400A105F6 /* AppDelegate.swift in Sources */,
+				D6BA767F2575642200A105F6 /* BaseViewController.swift in Sources */,
+				D6BA768E2575642200A105F6 /* DetailViewModel.swift in Sources */,
+				D6BA768B2575642200A105F6 /* AudioListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +436,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6BA76922575642200A105F6 /* DetailViewController.swift in Sources */,
+				D6BA76802575642200A105F6 /* BaseViewController.swift in Sources */,
+				D6BA76772575642200A105F6 /* CoreDataFunctions.swift in Sources */,
 				D6BA763D2575637500A105F6 /* AppScripPracticalTests.swift in Sources */,
+				D6BA768F2575642200A105F6 /* DetailViewModel.swift in Sources */,
+				D6BA768C2575642200A105F6 /* AudioListViewController.swift in Sources */,
+				D6BA76862575642200A105F6 /* AlbumListCell.swift in Sources */,
+				D6BA767D2575642200A105F6 /* ServerErrorViewController.swift in Sources */,
+				D6BA76892575642200A105F6 /* AlbumModel.swift in Sources */,
+				D6BA767A2575642200A105F6 /* BaseViewModel.swift in Sources */,
+				D6BA76832575642200A105F6 /* AudioListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +454,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6BA76932575642200A105F6 /* DetailViewController.swift in Sources */,
+				D6BA76812575642200A105F6 /* BaseViewController.swift in Sources */,
+				D6BA76782575642200A105F6 /* CoreDataFunctions.swift in Sources */,
 				D6BA76482575637500A105F6 /* AppScripPracticalUITests.swift in Sources */,
+				D6BA76902575642200A105F6 /* DetailViewModel.swift in Sources */,
+				D6BA768D2575642200A105F6 /* AudioListViewController.swift in Sources */,
+				D6BA76872575642200A105F6 /* AlbumListCell.swift in Sources */,
+				D6BA767E2575642200A105F6 /* ServerErrorViewController.swift in Sources */,
+				D6BA768A2575642200A105F6 /* AlbumModel.swift in Sources */,
+				D6BA767B2575642200A105F6 /* BaseViewModel.swift in Sources */,
+				D6BA76842575642200A105F6 /* AudioListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
